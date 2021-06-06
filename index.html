@@ -18,7 +18,7 @@
   </nav>
   <section id="welcome" class="grid">
     <div class="welcome-text">
-      <h2>Welcome !<br />You have the POTENTIAL to CHANGE THE WORLD.</h2>
+      <h2>Welcome!<br />You have the POTENTIAL to CHANGE THE WORLD.</h2>
       <p class="leading">Our vision as an organisation is to leap into few of the world's leading social crisis. Yes, you can donate without paying money. We empower and support CREATIVITY as an engine for the betterment of our planet. The Cosmos Foundation marks the start of a new social renaissance. We are the creators of a completely unique market of non-profit organisations.</p>
       <a href="#portfolio" class="button">Learn More</a>
     </div>
@@ -73,10 +73,11 @@
   <section id="contact">
     <h3>Creative Launchpad</h3>
     <p class="leading">Fill in the credentials and add your creative supplement file to LAUNCH.</p>
-    <form>
-      <input type="text" placeholder='NAME'>
-      <input type="email" placeholder='EMAIL'>
-      <input type="file" placeholder="Upload your Creative Supplement">
+    <form action="POST" data-netlify="true">
+      <input type="text" placeholder='NAME' required>
+      <input type="email" placeholder='EMAIL' required>
+      <input type="text" placeholder='COUNTRY' required>
+      <input type="file" placeholder="Upload your Creative Supplement" required>
       <button class="button">Launch!</button>
     </form>
   </section>
