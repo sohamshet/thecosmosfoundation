@@ -73,11 +73,12 @@
   <section id="contact">
     <h3>Creative Launchpad</h3>
     <p class="leading">Fill in the credentials and add your creative supplement file to LAUNCH.</p>
-    <form action="POST" data-netlify="true">
+    <form action="POST" data-netlify-recaptcha="true" data-netlify="true">
       <input type="text" name="name" placeholder='NAME' required>
       <input type="email" name="email" placeholder='EMAIL' required>
       <input type="text" name="country" placeholder='COUNTRY' required>
       <input type="file" name="file" placeholder="Upload your Creative Supplement" required>
+      <div data-netlify-recaptcha="true"></div>
       <button class="button">Launch!</button>
     </form>
   </section>
