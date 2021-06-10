@@ -42,10 +42,6 @@
         <img src="assets/project_3.png" alt="captain cosmo image">
         <h4>Covid Oxygen Supply</h4>
       </a>
-      <!-- <a href="#">
-        <img src="assets/project_3.png" alt="captain cosmo image">
-        <h4>Captain Cosmo Blog 2</h4>
-      </a> -->
     </div>
   </section>
   <section id="skills">
@@ -72,12 +68,13 @@
   </section>
   <section id="contact">
     <h3>Creative Launchpad</h3>
-    <p class="leading">Fill in the credentials and add your creative supplement file to LAUNCH.</p>
-    <form action="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <p class="leading">Fill in the credentials and add your creative supplement file to LAUNCH.<br/> (If your file size is above 10 MB then make sure you convert it into a link we can access)</p>
+    <form action="/success.html" data-netlify-recaptcha="true" data-netlify="true">
       <input type="text" name="name" placeholder='NAME' required>
       <input type="email" name="email" placeholder='EMAIL' required>
       <input type="text" name="country" placeholder='COUNTRY' required>
-      <input type="file" name="file" placeholder="Upload your Creative Supplement" required>
+      <input type="file" name="file" placeholder="Upload your Creative Supplement">
+      <input type="url" name="file link" placeholder="Attach file link if its above 10 MB">
       <div data-netlify-recaptcha="true"></div>
       <button class="button">Launch!</button>
     </form>
