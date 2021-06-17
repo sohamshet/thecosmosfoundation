@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="assets/banner_image.png">
+  <title>The Cosmos Foundation</title>
+</head>
+<body>
+  <nav class="site-nav grid">
+    <h1>The Cosmos Foundation</h1>
+  </nav>
+  <section id="welcome" class="grid">
+    <div class="welcome-text">
+      <h2>Software Developer<br />No. of Openings: 1</h2>
+      <ol class="leading">
+          <li>Be fluent in html, css and php or html, css or javascript. The more you know the better.</li>
+          <li>Know basic github operations like commiting, etc.</li>
+          <li>Have atleast 4 months experience in the language could be some side project you worked on.</li>
+      </ol>
+      <a href="#contact" class="button">Apply Now!</a>
+    </div>
+    <div class="welcome-img">
+      <img src="assets/banner_image.png" alt="pic of planet">
+    </div>
+  </section>
+  <section id="contact">
+    <h3>Application</h3>
+    <p class="leading">Fill in the credentials and add your creative supplement file like a project you have worked on.(not required to submit)<br/> (If your file size is above 10 MB then make sure you convert it into a link we can access)</p>
+    <form name="sdInterns" action="/applicationForm.html" data-netlify-recaptcha="true" data-netlify="true">
+      <input type="text" name="name" placeholder='Name' required>
+      <input type="email" name="email" placeholder='Email' required>
+      <input type="text" name="country" placeholder='Country' required>
+      <input type="text" name="gender" placeholder="Gender"required>
+      <input type="text" name="personal note" placeholder="Why Us?" required>
+      <input type="file" name="file">
+      <input type="url" name="file link" placeholder="Attach file link if its exceeds 10 MB">
+      <div data-netlify-recaptcha="true"></div>
+      <button class="button" style="cursor: pointer;">Apply!</button>
+    </form>
+  </section>
+  <footer>
+    <div class="grid">
+      <p class="copyright"> &copy; All rights reserved to The Cosmos Foundation, 2021</br><a href="terms&policies.html" class="copyright" style="text-decoration: underline;">Terms and Policies</a>    <a href="contatcus.html" class="copyright" style="text-decoration: underline;">Connect With Us</a></p>
+      <ul class="social">
+        <li><a href="https://www.instagram.com/thecosmosfoundation/" target="_blank"><img src="assets/icon_ig.svg" alt="instagram"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
